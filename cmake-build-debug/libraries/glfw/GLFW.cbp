@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GLFW"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libraries\;CMake Files\libraries\glfw\;CMake Files\libraries\glfw\src\;CMake Files\libraries\glad\;CMake Files\libraries\itugl\;CMake Files\exercises\;CMake Files\exercises\exercise00\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src"/>
+					<Add directory="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics\ Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_init.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_joystick.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_monitor.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/cocoa_window.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/nsgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/nsgl_context.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/posix_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/posix_thread.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\glfw\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\glad\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\itugl\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\exercises\"/>
+		</Unit>
+		<Unit filename="/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/exercise00/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\exercises\exercise00\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

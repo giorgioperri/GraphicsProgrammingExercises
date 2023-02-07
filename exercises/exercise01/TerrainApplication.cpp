@@ -1,4 +1,6 @@
 #include "TerrainApplication.h"
+#include <ituGL/geometry/VertexAttribute.h>
+#include <ituGL/geometry/ElementBufferObject.h>
 
 // (todo) 01.1: Include the libraries you need
 
@@ -42,23 +44,50 @@ void TerrainApplication::Initialize()
     // Build shaders and store in m_shaderProgram
     BuildShaders();
 
-    // (todo) 01.1: Create containers for the vertex position
-
+    std::vector<Vector3> m_vertexPositions;
 
     // (todo) 01.1: Fill in vertex data
+    //Using 2 nested loops, create a list of positions for the grid. Each quad will need 6 vertices (2 triangles).
+    for (int i = 0; i < m_gridX; i++)
+    {
+        for (int j = 0; j < m_gridY; j++)
+        {
+            //using a scale of 1/m_gridX x 1/m_gridY, so the total size of the grid is 1
+            float xScale = 1.0f / m_gridX;
+            float yScale = 1.0f / m_gridY;
 
+            //calculate the position of the vertices
+            float x = i * xScale;
+            float y = j * yScale;
+
+            m_vertexPositions.push_back(Vector3(x, y, 0));
+            m_vertexPositions.push_back(Vector3(x, y + yScale, 0));
+            m_vertexPositions.push_back(Vector3(x + xScale, y, 0));
+            m_vertexPositions.push_back(Vector3(x + xScale, y, 0));
+            m_vertexPositions.push_back(Vector3(x, y + yScale, 0));
+            m_vertexPositions.push_back(Vector3(x + xScale, y + yScale, 0));
+        }
+    }
 
     // (todo) 01.1: Initialize VAO, and VBO
+    //allocate data to the vbo
+    m_vao.Bind();
+    m_vbo.Bind();
+    m_vbo.AllocateData<Vector3>(std::span(m_vertexPositions));
 
+    VertexAttribute position(Data::Type::Float, 3);
+    m_vao.SetAttribute(0, position, 0);
 
     // (todo) 01.5: Initialize EBO
 
 
     // (todo) 01.1: Unbind VAO, and VBO
+//    m_vbo.Unbind();
+//    m_vao.Unbind();
 
 
     // (todo) 01.5: Unbind EBO
-
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 }
 
 void TerrainApplication::Update()
@@ -79,6 +108,7 @@ void TerrainApplication::Render()
     glUseProgram(m_shaderProgram);
 
     // (todo) 01.1: Draw the grid
+    glDrawArrays(GL_TRIANGLES, 0, m_gridX * m_gridY * 6);
 
 }
 
