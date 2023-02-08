@@ -60,6 +60,10 @@ void TerrainApplication::Initialize()
             float x = i * xScale;
             float y = j * yScale;
 
+            //move the vertices to the center of the screen
+            x-=0.5f;
+            y-=0.5f;
+
             m_vertexPositions.push_back(Vector3(x, y, 0));
             m_vertexPositions.push_back(Vector3(x, y + yScale, 0));
             m_vertexPositions.push_back(Vector3(x + xScale, y, 0));
