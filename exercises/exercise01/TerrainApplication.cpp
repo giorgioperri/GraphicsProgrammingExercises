@@ -2,8 +2,6 @@
 #include <ituGL/geometry/VertexAttribute.h>
 #include <ituGL/geometry/ElementBufferObject.h>
 
-// (todo) 01.1: Include the libraries you need
-
 #include <cmath>
 #include <iostream>
 
@@ -31,7 +29,6 @@ struct Vector3
 // (todo) 01.8: Declare an struct with the vertex format
 
 
-
 TerrainApplication::TerrainApplication()
     : Application(1024, 1024, "Terrain demo"), m_gridX(16), m_gridY(16), m_shaderProgram(0)
 {
@@ -45,8 +42,8 @@ void TerrainApplication::Initialize()
     BuildShaders();
 
     std::vector<Vector3> m_vertexPositions;
+    std::vector<Vector2> m_textureCoordinates;
 
-    // (todo) 01.1: Fill in vertex data
     //Using 2 nested loops, create a list of positions for the grid. Each quad will need 6 vertices (2 triangles).
     for (int i = 0; i < m_gridX; i++)
     {
@@ -61,15 +58,28 @@ void TerrainApplication::Initialize()
             float y = j * yScale;
 
             //move the vertices to the center of the screen
-            x-=0.5f;
-            y-=0.5f;
+            x -= 0.5f;
+            y -= 0.5f;
+
+            //-------------------vertex positions-------------------
 
             m_vertexPositions.push_back(Vector3(x, y, 0));
             m_vertexPositions.push_back(Vector3(x, y + yScale, 0));
             m_vertexPositions.push_back(Vector3(x + xScale, y, 0));
-            m_vertexPositions.push_back(Vector3(x + xScale, y, 0));
+
             m_vertexPositions.push_back(Vector3(x, y + yScale, 0));
             m_vertexPositions.push_back(Vector3(x + xScale, y + yScale, 0));
+            m_vertexPositions.push_back(Vector3(x + xScale, y, 0));
+
+            //-------------------texture coordinates-------------------
+
+            m_textureCoordinates.push_back(Vector2(0, 0));
+            m_textureCoordinates.push_back(Vector2(0, 1));
+            m_textureCoordinates.push_back(Vector2(1, 0));
+
+            m_textureCoordinates.push_back(Vector2(0, 1));
+            m_textureCoordinates.push_back(Vector2(1, 1));
+            m_textureCoordinates.push_back(Vector2(1, 0));
         }
     }
 
@@ -77,10 +87,17 @@ void TerrainApplication::Initialize()
     //allocate data to the vbo
     m_vao.Bind();
     m_vbo.Bind();
-    m_vbo.AllocateData<Vector3>(std::span(m_vertexPositions));
+    //allocate data to the vbo for both the vertex positions and the texture coordinates
+    m_vbo.AllocateData(m_vertexPositions.size() * sizeof(Vector3) + m_vertexPositions.size() * sizeof(Vector2));
+
+    m_vbo.UpdateData(std::span(m_vertexPositions), 0);
+    m_vbo.UpdateData(std::span(m_textureCoordinates), m_vertexPositions.size() * sizeof(Vector3));
 
     VertexAttribute position(Data::Type::Float, 3);
-    m_vao.SetAttribute(0, position, 0);
+    m_vao.SetAttribute(0, position, 0, 0);
+
+    VertexAttribute texCoord(Data::Type::Float, 2);
+    m_vao.SetAttribute(1, texCoord, m_vertexPositions.size() * sizeof(Vector3));
 
     // (todo) 01.5: Initialize EBO
 
@@ -91,7 +108,7 @@ void TerrainApplication::Initialize()
 
 
     // (todo) 01.5: Unbind EBO
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 }
 
 void TerrainApplication::Update()
