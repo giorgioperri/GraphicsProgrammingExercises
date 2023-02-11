@@ -3,6 +3,7 @@
 #include <ituGL/application/Application.h>
 #include <ituGL/geometry/VertexArrayObject.h>
 #include <ituGL/geometry/VertexBufferObject.h>
+#include <ituGL/geometry/ElementBufferObject.h>
 #include <vector>
 
 class TerrainApplication : public Application
@@ -26,6 +27,7 @@ private:
 
     VertexArrayObject m_vao;
     VertexBufferObject m_vbo;
+    ElementBufferObject m_ebo;
 
     // (todo) 01.5: Declare an EBO
 
