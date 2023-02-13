@@ -50,8 +50,14 @@ void TerrainApplication::Initialize()
     // Build shaders and store in m_shaderProgram
     BuildShaders();
 
+    ComputeVertices();
+
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+}
+
+void TerrainApplication::ComputeVertices() {
     std::vector<int> m_triangleIndices;
-    std::vector<Vertex> m_vertices;
+    std::__1::vector<Vertex> m_vertices;
 
     //Using 2 nested loops, create a list of positions for the grid. Each quad will need 6 vertices (2 triangles).
     for (int i = 0; i < m_gridX; i++)
@@ -77,10 +83,12 @@ void TerrainApplication::Initialize()
 
             //-------------------vertex positions-------------------
 
-            float height = stb_perlin_fbm_noise3(x, y, 0, 2, 0.5f, 6) * 0.5f;
-            float height1 = stb_perlin_fbm_noise3(x, y + yScale, 0, 2, 0.5f, 6) * 0.5f;
-            float height2 = stb_perlin_fbm_noise3(x + xScale, y, 0, 2, 0.5f, 6)  * 0.5f;
-            float height3 = stb_perlin_fbm_noise3(x + xScale, y + yScale, 0, 2, 0.5f, 6) * 0.5f;
+            float seedClock = clock * 0.1f;
+
+            float height = stb_perlin_fbm_noise3(x + seedClock, y + seedClock, 0, 2, 0.5f, 6) * 0.7f;
+            float height1 = stb_perlin_fbm_noise3(x + seedClock, y + seedClock + yScale, 0, 2, 0.5f, 6) * 0.7f;
+            float height2 = stb_perlin_fbm_noise3(x +seedClock+ xScale, y+seedClock, 0, 2, 0.5f, 6)  * 0.7f;
+            float height3 = stb_perlin_fbm_noise3(x + seedClock + xScale, y + seedClock + yScale, 0, 2, 0.5f, 6) * 0.7f;
 
             V1.position = Vector3(x, y, height);
             V2.position = Vector3(x, y + yScale, height1);
@@ -163,56 +171,59 @@ void TerrainApplication::Initialize()
         }
     }
 
-//    for (int j = 0; j < m_gridY; j++)
-//    {
-//        for (int i = 0; i < m_gridX; i++)
-//        {
-//            int index = i * 4 + j * 4 * m_gridX;
-//
-//            Vertex& V1 = m_vertices[index];     // BOTTOM LEFT
-//            Vertex& V2 = m_vertices[index + 1]; // TOP LEFT
-//            Vertex& V3 = m_vertices[index + 2]; // BOTTOM RIGHT
-//            Vertex& V4 = m_vertices[index + 3]; // TOP RIGHT
-//
-//            Vertex V1left = (i == 0) ? V1 : m_vertices[index - 4];
-//            Vertex V1right = V3;
-//            Vertex V1up = V2;
-//            Vertex V1down = (j == 0) ? V1 : m_vertices[index - 4 * m_gridX];
-//
-//            Vertex V2left = (i == 0) ? V2 : m_vertices[index - 4 + 1];
-//            Vertex V2right = V4;
-//            Vertex V2up = (j == m_gridY - 1) ? V2 : m_vertices[index + 4 * m_gridX + 1];
-//            Vertex V2down = V1;
-//
-//            Vertex V3left = V1;
-//            Vertex V3right = (i == m_gridX - 1) ? V3 : m_vertices[index + 4 + 2];
-//            Vertex V3up = V4;
-//            Vertex V3down = (j == 0) ? V3 : m_vertices[index - 4 * m_gridX +2];
-//
-//            Vertex V4left =  V2;
-//            Vertex V4right = (i == m_gridX - 1) ? V4 : m_vertices[index + 4 + 3];
-//            Vertex V4up = (j == m_gridY - 1) ? V4 : m_vertices[index + 4 * m_gridX  + 3];
-//            Vertex V4down =  V3;
-//
-//            float V1deltaX = (V1right.position.z - V1left.position.z) / (V1right.position.x - V1left.position.x);
-//            float V1deltaY = (V1up.position.z - V1down.position.z) / (V1up.position.y - V1down.position.y);
-//
-//            float V2deltaX = (V2right.position.z - V2left.position.z) / (V2right.position.x - V2left.position.x);
-//            float V2deltaY = (V2up.position.z - V2down.position.z) / (V2up.position.y - V2down.position.y);
-//
-//            float V3deltaX = (V3right.position.z - V3left.position.z) / (V3right.position.x - V3left.position.x);
-//            float V3deltaY = (V3up.position.z - V3down.position.z) / (V3up.position.y - V3down.position.y);
-//
-//            float V4deltaX = (V4right.position.z - V4left.position.z) / (V4right.position.x - V4left.position.x);
-//            float V4deltaY = (V4up.position.z - V4down.position.z) / (V4up.position.y - V4down.position.y);
-//
-//            V1.normal = Vector3(V1deltaX, V1deltaY, 1).Normalize();
-//            V2.normal = Vector3(V2deltaX, V2deltaY, 1).Normalize();
-//            V3.normal = Vector3(V3deltaX, V3deltaY, 1).Normalize();
-//            V4.normal = Vector3(V4deltaX, V4deltaY, 1).Normalize();
-//        }
-//    }
+    {{
+            //    for (int j = 0; j < m_gridY; j++)
+    //    {
+    //        for (int i = 0; i < m_gridX; i++)
+    //        {
+    //            int index = i * 4 + j * 4 * m_gridX;
+    //
+    //            Vertex& V1 = m_vertices[index];     // BOTTOM LEFT
+    //            Vertex& V2 = m_vertices[index + 1]; // TOP LEFT
+    //            Vertex& V3 = m_vertices[index + 2]; // BOTTOM RIGHT
+    //            Vertex& V4 = m_vertices[index + 3]; // TOP RIGHT
+    //
+    //            Vertex V1left = (i == 0) ? V1 : m_vertices[index - 4];
+    //            Vertex V1right = V3;
+    //            Vertex V1up = V2;
+    //            Vertex V1down = (j == 0) ? V1 : m_vertices[index - 4 * m_gridX];
+    //
+    //            Vertex V2left = (i == 0) ? V2 : m_vertices[index - 4 + 1];
+    //            Vertex V2right = V4;
+    //            Vertex V2up = (j == m_gridY - 1) ? V2 : m_vertices[index + 4 * m_gridX + 1];
+    //            Vertex V2down = V1;
+    //
+    //            Vertex V3left = V1;
+    //            Vertex V3right = (i == m_gridX - 1) ? V3 : m_vertices[index + 4 + 2];
+    //            Vertex V3up = V4;
+    //            Vertex V3down = (j == 0) ? V3 : m_vertices[index - 4 * m_gridX +2];
+    //
+    //            Vertex V4left =  V2;
+    //            Vertex V4right = (i == m_gridX - 1) ? V4 : m_vertices[index + 4 + 3];
+    //            Vertex V4up = (j == m_gridY - 1) ? V4 : m_vertices[index + 4 * m_gridX  + 3];
+    //            Vertex V4down =  V3;
+    //
+    //            float V1deltaX = (V1right.position.z - V1left.position.z) / (V1right.position.x - V1left.position.x);
+    //            float V1deltaY = (V1up.position.z - V1down.position.z) / (V1up.position.y - V1down.position.y);
+    //
+    //            float V2deltaX = (V2right.position.z - V2left.position.z) / (V2right.position.x - V2left.position.x);
+    //            float V2deltaY = (V2up.position.z - V2down.position.z) / (V2up.position.y - V2down.position.y);
+    //
+    //            float V3deltaX = (V3right.position.z - V3left.position.z) / (V3right.position.x - V3left.position.x);
+    //            float V3deltaY = (V3up.position.z - V3down.position.z) / (V3up.position.y - V3down.position.y);
+    //
+    //            float V4deltaX = (V4right.position.z - V4left.position.z) / (V4right.position.x - V4left.position.x);
+    //            float V4deltaY = (V4up.position.z - V4down.position.z) / (V4up.position.y - V4down.position.y);
+    //
+    //            V1.normal = Vector3(V1deltaX, V1deltaY, 1).Normalize();
+    //            V2.normal = Vector3(V2deltaX, V2deltaY, 1).Normalize();
+    //            V3.normal = Vector3(V3deltaX, V3deltaY, 1).Normalize();
+    //            V4.normal = Vector3(V4deltaX, V4deltaY, 1).Normalize();
+    //        }
+    //    }
+        }} //alternative method for calculating normals
 
+    //normals calculation
     for (int i = 0; i < m_gridX; i++)
     {
         for (int j = 0; j < m_gridY; j++)
@@ -287,14 +298,13 @@ void TerrainApplication::Initialize()
     m_vbo.Unbind();
     m_vao.Unbind();
     m_ebo.Unbind();
-
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 }
 
 void TerrainApplication::Update()
 {
     Application::Update();
-
+    ComputeVertices();
+    clock += GetDeltaTime();
     UpdateOutputMode();
 }
 

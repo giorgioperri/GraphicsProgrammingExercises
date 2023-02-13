@@ -29,6 +29,7 @@ private:
     VertexBufferObject m_vbo;
     ElementBufferObject m_ebo;
 
-    // (todo) 01.5: Declare an EBO
+    float clock = 0.0f;
 
+    void ComputeVertices();
 };
