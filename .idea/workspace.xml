@@ -10,6 +10,7 @@
     <generated>
       <config projectName="ITU-graphics-programming" targetName="glad" />
       <config projectName="ITU-graphics-programming" targetName="glfw" />
+      <config projectName="ITU-graphics-programming" targetName="exercise02" />
       <config projectName="ITU-graphics-programming" targetName="exercise01" />
       <config projectName="ITU-graphics-programming" targetName="itugl" />
       <config projectName="ITU-graphics-programming" targetName="exercise00" />
@@ -23,15 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defce34c-652e-47ea-85c6-87a1c275aa62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise01/CMakeFiles/exercise01.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise01/CMakeFiles/exercise01.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise01/exercise01" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise01/exercise01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise00/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise01/TerrainApplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise01/TerrainApplication.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise01/TerrainApplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise01/TerrainApplication.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise_01.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +72,22 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.exercise01">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="exercise00" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ITU-graphics-programming" TARGET_NAME="exercise00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ITU-graphics-programming" RUN_TARGET_NAME="exercise00">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="exercise01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ITU-graphics-programming" TARGET_NAME="exercise01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ITU-graphics-programming" RUN_TARGET_NAME="exercise01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exercise02" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ITU-graphics-programming" TARGET_NAME="exercise02" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ITU-graphics-programming" RUN_TARGET_NAME="exercise02">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -109,6 +115,7 @@
     <list>
       <item itemvalue="CMake Application.exercise00" />
       <item itemvalue="CMake Application.exercise01" />
+      <item itemvalue="CMake Application.exercise02" />
       <item itemvalue="CMake Application.glad" />
       <item itemvalue="CMake Application.uninstall" />
       <item itemvalue="CMake Application.glfw" />
@@ -130,6 +137,7 @@
       <workItem from="1676225458806" duration="36000" />
       <workItem from="1676250771817" duration="2000" />
       <workItem from="1676250982279" duration="1992000" />
+      <workItem from="1676369489934" duration="142000" />
     </task>
     <servers />
   </component>

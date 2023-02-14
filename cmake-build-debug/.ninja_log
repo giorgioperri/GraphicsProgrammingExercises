@@ -1,13 +1,13 @@
 # ninja log v5
 879	1086	1675763983045956735	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Data.cpp.o	160b4c3b9da9bdd5
-920	1143	1675763983103817984	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.cpp.o	d13f09f1d03614b6
+359	487	1676253037809633112	exercises/exercise01/exercise01	912d771b0b4caee9
 986	1200	1675763983160635104	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexBufferObject.cpp.o	b96e0149db1de484
-361	482	1676252879067662636	exercises/exercise01/exercise01	912d771b0b4caee9
 701	736	1675763982696802113	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Window.cpp.o	eee4efd5182c5974
+920	1143	1675763983103817984	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.cpp.o	d13f09f1d03614b6
 866	1091	1675763983050961333	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Color.cpp.o	dbfb37d98fa595
 288	525	1675763982482414709	libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o	ad4d633ffdfc9d92
 525	989	1675763982944916113	libraries/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o	fbb40e9f47f4cd6c
-28	361	1676252878945690053	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
+29	359	1676253037680566357	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
 1200	1218	1675763983180707000	libraries/itugl/libitugl.a	61b537999cf2c1f1
 391	865	1675763982820679967	libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o	c0188be7af9bee3a
 639	889	1675763982845296245	libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o	59c26b31aaa62b5d
@@ -32,19 +32,3 @@
 889	920	1675763982880709180	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Object.cpp.o	b5e9e409e4179cb7
 1	255	1675763982213383316	libraries/glad/CMakeFiles/glad.dir/src/glad.c.o	caa0ef6103b79616
 1	406	1675763982363957579	libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o	3f7015505d88f1fe
-29	369	1676252895446495179	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-369	491	1676252895569400264	exercises/exercise01/exercise01	912d771b0b4caee9
-28	362	1676252923427791408	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-363	492	1676252923560872684	exercises/exercise01/exercise01	912d771b0b4caee9
-28	352	1676252931399006555	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-353	473	1676252931520762762	exercises/exercise01/exercise01	912d771b0b4caee9
-27	362	1676252948346344750	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-362	495	1676252948480480435	exercises/exercise01/exercise01	912d771b0b4caee9
-29	359	1676252967280327582	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-359	484	1676252967406386901	exercises/exercise01/exercise01	912d771b0b4caee9
-29	357	1676252984705698509	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-357	485	1676252984834842057	exercises/exercise01/exercise01	912d771b0b4caee9
-29	354	1676253000328042922	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-354	475	1676253000449841182	exercises/exercise01/exercise01	912d771b0b4caee9
-29	359	1676253037680566357	exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o	c13d649b7521d7db
-359	487	1676253037809633112	exercises/exercise01/exercise01	912d771b0b4caee9

@@ -123,15 +123,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "itugl::@6e4f4d1442f75f8f2949"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "glad::@3dc4ab03f6fdfa199928"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@7d8f67159c48f691a52d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "itugl::@6e4f4d1442f75f8f2949"
 		}
 	],
 	"folder" : 

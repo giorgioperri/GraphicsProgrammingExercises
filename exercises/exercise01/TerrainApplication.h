@@ -1,10 +1,10 @@
 #pragma once
 
 #include <ituGL/application/Application.h>
-#include <ituGL/geometry/VertexArrayObject.h>
+
 #include <ituGL/geometry/VertexBufferObject.h>
+#include <ituGL/geometry/VertexArrayObject.h>
 #include <ituGL/geometry/ElementBufferObject.h>
-#include <vector>
 
 class TerrainApplication : public Application
 {
@@ -25,11 +25,7 @@ private:
     unsigned int m_gridX, m_gridY;
     unsigned int m_shaderProgram;
 
-    VertexArrayObject m_vao;
     VertexBufferObject m_vbo;
+    VertexArrayObject m_vao;
     ElementBufferObject m_ebo;
-
-    float clock = 0.0f;
-
-    void ComputeVertices();
 };

@@ -1,9 +1,11 @@
-#define STB_PERLIN_IMPLEMENTATION
-
 #include "TerrainApplication.h"
+
 #include <ituGL/geometry/VertexAttribute.h>
+
+#define STB_PERLIN_IMPLEMENTATION
 #include <stb_perlin.h>
 
+#include <vector>
 #include <cmath>
 #include <iostream>
 
@@ -28,7 +30,7 @@ struct Vector3
     }
 };
 
-// (todo) 01.8: Declare an struct with the vertex format
+// Helper struct with the vertex format
 struct Vertex
 {
     Vector3 position;
@@ -38,8 +40,12 @@ struct Vertex
 };
 
 
+// Forward declare helper function
+Vector3 GetColorFromHeight(float height);
+
+
 TerrainApplication::TerrainApplication()
-    : Application(1024, 1024, "Terrain demo"), m_gridX(64), m_gridY(64), m_shaderProgram(0)
+    : Application(1024, 1024, "Terrain demo"), m_gridX(256), m_gridY(256), m_shaderProgram(0)
 {
 }
 
@@ -50,261 +56,132 @@ void TerrainApplication::Initialize()
     // Build shaders and store in m_shaderProgram
     BuildShaders();
 
-    ComputeVertices();
+    // Create containers for the vertex data
+    std::vector<Vertex> vertices;
 
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-}
+    // Create container for the element data
+    std::vector<unsigned int> indices;
 
-void TerrainApplication::ComputeVertices() {
-    std::vector<int> m_triangleIndices;
-    std::__1::vector<Vertex> m_vertices;
+    // Grid scale to convert the entire grid to size 1x1
+    Vector2 scale(1.0f / m_gridX, 1.0f / m_gridY);
 
-    //Using 2 nested loops, create a list of positions for the grid. Each quad will need 6 vertices (2 triangles).
-    for (int i = 0; i < m_gridX; i++)
+    // Number of columns and rows
+    unsigned int columnCount = m_gridX + 1;
+    unsigned int rowCount = m_gridY + 1;
+
+    // Iterate over each VERTEX
+    for (int j = 0; j < rowCount; ++j)
     {
-        for (int j = 0; j < m_gridY; j++)
+        for (int i = 0; i < columnCount; ++i)
         {
-            Vertex V1 = Vertex();
-            Vertex V2 = Vertex();
-            Vertex V3 = Vertex();
-            Vertex V4 = Vertex();
+            // Vertex data for this vertex only
+            Vertex& vertex = vertices.emplace_back();
+            float x = i * scale.x - 0.5f;
+            float y = j * scale.y - 0.5f;
+            float z = stb_perlin_fbm_noise3(x * 2, y * 2, 0.0f, 1.9f, 0.5f, 8) * 0.5f;
+            vertex.position = Vector3(x, y, z);
+            vertex.texCoord = Vector2(i, j);
+            vertex.color = GetColorFromHeight(z);
+            vertex.normal = Vector3(0.0f, 0.0f, 1.0f); // Actual value computed after all vertices are created
 
-            //using a scale of 1/m_gridX x 1/m_gridY, so the total size of the grid is 1
-            float xScale = 1.0f / m_gridX;
-            float yScale = 1.0f / m_gridY;
-
-            //calculate the position of the vertices
-            float x = i * xScale;
-            float y = j * yScale;
-
-            //move the vertices to the center of the screen
-            x -= 0.5f;
-            y -= 0.5f;
-
-            //-------------------vertex positions-------------------
-
-            float seedClock = clock * 0.1f;
-
-            float height = stb_perlin_fbm_noise3(x + seedClock, y + seedClock, 0, 2, 0.5f, 6) * 0.7f;
-            float height1 = stb_perlin_fbm_noise3(x + seedClock, y + seedClock + yScale, 0, 2, 0.5f, 6) * 0.7f;
-            float height2 = stb_perlin_fbm_noise3(x +seedClock+ xScale, y+seedClock, 0, 2, 0.5f, 6)  * 0.7f;
-            float height3 = stb_perlin_fbm_noise3(x + seedClock + xScale, y + seedClock + yScale, 0, 2, 0.5f, 6) * 0.7f;
-
-            V1.position = Vector3(x, y, height);
-            V2.position = Vector3(x, y + yScale, height1);
-            V3.position = Vector3(x + xScale, y, height2);
-            V4.position = Vector3(x + xScale, y + yScale, height3);
-
-            //-------------------texture coordinates-------------------
-
-            V1.texCoord = Vector2(0, 0);
-            V2.texCoord = Vector2(0, 1);
-            V3.texCoord = Vector2(1, 0);
-            V4.texCoord = Vector2(1, 1);
-
-            //-------------------triangle indices-------------------
-
-            int index = i * 4 + j * 4 * m_gridX;
-
-            //first triangle
-            m_triangleIndices.push_back(index);
-            m_triangleIndices.push_back(index + 1);
-            m_triangleIndices.push_back(index + 2);
-
-            //second triangle
-            m_triangleIndices.push_back(index + 2);
-            m_triangleIndices.push_back(index + 1);
-            m_triangleIndices.push_back(index + 3);
-
-            //-------------------colors-------------------
-
-            float colorShading = height + 0.5f;
-
-            Vector3 waterColor = Vector3(0.2f * colorShading, 0.5f * colorShading, 0.7f * colorShading);
-            Vector3 sandColor = Vector3(0.8f * colorShading, 0.7f * colorShading, 0.5f * colorShading);
-            Vector3 grassColor = Vector3(0.2f * colorShading, 0.7f * colorShading, 0.2f * colorShading);
-            Vector3 rockColor = Vector3(0.5f * colorShading, 0.5f * colorShading, 0.5f * colorShading);
-            Vector3 snowColor = Vector3(1.0f * colorShading, 1.0f * colorShading, 1.0f * colorShading);
-
-            if (height < 0)
+            // Index data for quad formed by previous vertices and current
+            if (i > 0 && j > 0)
             {
-                V1.color = waterColor;
-                V2.color = waterColor;
-                V3.color = waterColor;
-                V4.color = waterColor;
-            }
-            else if (height < 0.1f)
-            {
-                V1.color = sandColor;
-                V2.color = sandColor;
-                V3.color = sandColor;
-                V4.color = sandColor;
-            }
-            else if (height < 0.25f)
-            {
-                V1.color = grassColor;
-                V2.color = grassColor;
-                V3.color = grassColor;
-                V4.color = grassColor;
-            }
-            else if (height < 0.31f)
-            {
-                V1.color = rockColor;
-                V2.color = rockColor;
-                V3.color = rockColor;
-                V4.color = rockColor;
-            }
-            else
-            {
-                V1.color = snowColor;
-                V2.color = snowColor;
-                V3.color = snowColor;
-                V4.color = snowColor;
-            }
+                unsigned int top_right = j * columnCount + i; // Current vertex
+                unsigned int top_left = top_right - 1;
+                unsigned int bottom_right = top_right - columnCount;
+                unsigned int bottom_left = bottom_right - 1;
 
-            //-------------------add vertices to the list-------------------
+                //Triangle 1
+                indices.push_back(bottom_left);
+                indices.push_back(bottom_right);
+                indices.push_back(top_left);
 
-            m_vertices.push_back(V1);
-            m_vertices.push_back(V2);
-            m_vertices.push_back(V3);
-            m_vertices.push_back(V4);
-        }
-    }
-
-    {{
-            //    for (int j = 0; j < m_gridY; j++)
-    //    {
-    //        for (int i = 0; i < m_gridX; i++)
-    //        {
-    //            int index = i * 4 + j * 4 * m_gridX;
-    //
-    //            Vertex& V1 = m_vertices[index];     // BOTTOM LEFT
-    //            Vertex& V2 = m_vertices[index + 1]; // TOP LEFT
-    //            Vertex& V3 = m_vertices[index + 2]; // BOTTOM RIGHT
-    //            Vertex& V4 = m_vertices[index + 3]; // TOP RIGHT
-    //
-    //            Vertex V1left = (i == 0) ? V1 : m_vertices[index - 4];
-    //            Vertex V1right = V3;
-    //            Vertex V1up = V2;
-    //            Vertex V1down = (j == 0) ? V1 : m_vertices[index - 4 * m_gridX];
-    //
-    //            Vertex V2left = (i == 0) ? V2 : m_vertices[index - 4 + 1];
-    //            Vertex V2right = V4;
-    //            Vertex V2up = (j == m_gridY - 1) ? V2 : m_vertices[index + 4 * m_gridX + 1];
-    //            Vertex V2down = V1;
-    //
-    //            Vertex V3left = V1;
-    //            Vertex V3right = (i == m_gridX - 1) ? V3 : m_vertices[index + 4 + 2];
-    //            Vertex V3up = V4;
-    //            Vertex V3down = (j == 0) ? V3 : m_vertices[index - 4 * m_gridX +2];
-    //
-    //            Vertex V4left =  V2;
-    //            Vertex V4right = (i == m_gridX - 1) ? V4 : m_vertices[index + 4 + 3];
-    //            Vertex V4up = (j == m_gridY - 1) ? V4 : m_vertices[index + 4 * m_gridX  + 3];
-    //            Vertex V4down =  V3;
-    //
-    //            float V1deltaX = (V1right.position.z - V1left.position.z) / (V1right.position.x - V1left.position.x);
-    //            float V1deltaY = (V1up.position.z - V1down.position.z) / (V1up.position.y - V1down.position.y);
-    //
-    //            float V2deltaX = (V2right.position.z - V2left.position.z) / (V2right.position.x - V2left.position.x);
-    //            float V2deltaY = (V2up.position.z - V2down.position.z) / (V2up.position.y - V2down.position.y);
-    //
-    //            float V3deltaX = (V3right.position.z - V3left.position.z) / (V3right.position.x - V3left.position.x);
-    //            float V3deltaY = (V3up.position.z - V3down.position.z) / (V3up.position.y - V3down.position.y);
-    //
-    //            float V4deltaX = (V4right.position.z - V4left.position.z) / (V4right.position.x - V4left.position.x);
-    //            float V4deltaY = (V4up.position.z - V4down.position.z) / (V4up.position.y - V4down.position.y);
-    //
-    //            V1.normal = Vector3(V1deltaX, V1deltaY, 1).Normalize();
-    //            V2.normal = Vector3(V2deltaX, V2deltaY, 1).Normalize();
-    //            V3.normal = Vector3(V3deltaX, V3deltaY, 1).Normalize();
-    //            V4.normal = Vector3(V4deltaX, V4deltaY, 1).Normalize();
-    //        }
-    //    }
-        }} //alternative method for calculating normals
-
-    //normals calculation
-    for (int i = 0; i < m_gridX; i++)
-    {
-        for (int j = 0; j < m_gridY; j++)
-        {
-            //iterate through each quad in the grid
-            for(int k = 0; k < 4; k++)
-            {
-                //calculate the index of the current vertex
-                int index = i * 4 + j * 4 * m_gridX + k;
-
-                //calculate the index of the vertex to the left
-                int leftIndex = index - 1;
-                if (k == 0)
-                {
-                    leftIndex = index + 3;
-                }
-
-                //calculate the index of the vertex to the right
-                int rightIndex = index + 1;
-                if (k == 3)
-                {
-                    rightIndex = index - 3;
-                }
-
-                //calculate the index of the vertex above
-                int topIndex = index + 4;
-                if (j == m_gridY - 1)
-                {
-                    topIndex = index - 4 * m_gridX;
-                }
-
-                //calculate the index of the vertex below
-                int bottomIndex = index - 4;
-                if (j == 0)
-                {
-                    bottomIndex = index + 4 * m_gridX;
-                }
-
-                //Obtain the delta in X for that vertex: (right.z - left.z) / (right.x - left.x)
-                float deltaX = (m_vertices[rightIndex].position.z - m_vertices[leftIndex].position.z) / (m_vertices[rightIndex].position.x - m_vertices[leftIndex].position.x);
-
-                //Obtain the delta in Y for that vertex: (top.z - bottom.z) / (top.y - bottom.y)
-                float deltaY = (m_vertices[topIndex].position.z - m_vertices[bottomIndex].position.z) / (m_vertices[topIndex].position.y - m_vertices[bottomIndex].position.y);
-
-                //set the normal of the current vertex
-                m_vertices[index].normal = Vector3(deltaX, deltaY, 1.0f).Normalize();
+                //Triangle 2
+                indices.push_back(bottom_right);
+                indices.push_back(top_left);
+                indices.push_back(top_right);
             }
         }
     }
 
-    //allocate data to the vbo
-    m_vao.Bind();
+    // Compute normals when we have the positions of all the vertices
+    // Iterate AGAIN over each vertex
+    for (int j = 0; j < rowCount; ++j)
+    {
+        for (int i = 0; i < columnCount; ++i)
+        {
+            // Get the vertex at (i, j)
+            int index = j * columnCount + i;
+            Vertex& vertex = vertices[index];
+
+            // Compute the delta in X
+            int prevX = i > 0 ? index - 1 : index;
+            int nextX = i < m_gridX ? index + 1 : index;
+            float deltaHeightX = vertices[nextX].position.z - vertices[prevX].position.z;
+            float deltaX = vertices[nextX].position.x - vertices[prevX].position.x;
+            float x = deltaHeightX / deltaX;
+
+            // Compute the delta in Y
+            int prevY = j > 0 ? index - columnCount : index;
+            int nextY = j < m_gridY ? index + columnCount : index;
+            float deltaHeightY = vertices[nextY].position.z - vertices[prevY].position.z;
+            float deltaY = vertices[nextY].position.y - vertices[prevY].position.y;
+            float y = deltaHeightY / deltaY;
+
+            // Compute the normal
+            vertex.normal = Vector3(x, y, 1.0f).Normalize();
+        }
+    }
+
+    // Declare attributes
+    VertexAttribute positionAttribute(Data::Type::Float, 3);
+    VertexAttribute texCoordAttribute(Data::Type::Float, 2);
+    VertexAttribute colorAttribute(Data::Type::Float, 3);
+    VertexAttribute normalAttribute(Data::Type::Float, 3);
+
+    // Compute offsets inside the VERTEX STRUCT
+    size_t positionOffset = 0u;
+    size_t texCoordOffset = positionOffset + positionAttribute.GetSize();
+    size_t colorOffset = texCoordOffset + texCoordAttribute.GetSize();
+    size_t normalOffset = colorOffset + colorAttribute.GetSize();
+
+    // Allocate uninitialized data for the total size in the VBO
     m_vbo.Bind();
+    m_vbo.AllocateData(std::span(vertices));
+
+    // The stride is not automatic now. Each attribute element is "sizeof(Vertex)" bytes apart from next
+    GLsizei stride = sizeof(Vertex);
+
+    // Set the pointer to the data in the VAO (notice that this offsets are for a single element)
+    m_vao.Bind();
+    m_vao.SetAttribute(0, positionAttribute, positionOffset, stride);
+    m_vao.SetAttribute(1, texCoordAttribute, texCoordOffset, stride);
+    m_vao.SetAttribute(2, colorAttribute, colorOffset, stride);
+    m_vao.SetAttribute(3, normalAttribute, normalOffset, stride);
+
+    // With VAO bound, bind EBO to register it (and allocate element buffer at the same time)
     m_ebo.Bind();
+    m_ebo.AllocateData(std::span(indices));
 
-    //allocate data to the vbo for the vertex positions and the texture coordinates and the colors
-    m_vbo.AllocateData(std::span(m_vertices));
-    m_ebo.AllocateData(std::span(m_triangleIndices));
+    // Unbind VAO, and VBO
+    VertexBufferObject::Unbind();
+    VertexArrayObject::Unbind();
 
-    VertexAttribute position(Data::Type::Float, 3);
-    m_vao.SetAttribute(0, position, 0, sizeof(Vertex));
+    // Unbind EBO (when VAO is no longer bound)
+    ElementBufferObject::Unbind();
 
-    VertexAttribute texCoord(Data::Type::Float, 2);
-    m_vao.SetAttribute(1, texCoord, position.GetSize(), sizeof(Vertex));
+    // Enable wireframe mode
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
-    VertexAttribute color(Data::Type::Float, 3);
-    m_vao.SetAttribute(2, color, position.GetSize() + texCoord.GetSize(), sizeof(Vertex));
-
-    VertexAttribute normal(Data::Type::Float, 3);
-    m_vao.SetAttribute(3, normal, position.GetSize() + texCoord.GetSize() + color.GetSize(), sizeof(Vertex));
-
-    m_vbo.Unbind();
-    m_vao.Unbind();
-    m_ebo.Unbind();
+    // Enable depth buffer
+    glEnable(GL_DEPTH_TEST);
 }
 
 void TerrainApplication::Update()
 {
     Application::Update();
-    ComputeVertices();
-    clock += GetDeltaTime();
+
     UpdateOutputMode();
 }
 
@@ -318,14 +195,43 @@ void TerrainApplication::Render()
     // Set shader to be used
     glUseProgram(m_shaderProgram);
 
+    // Bind the grid VAO
     m_vao.Bind();
-    glEnable(GL_DEPTH_TEST);
-    glDrawElements(GL_TRIANGLES, m_gridX * m_gridY * 6, GL_UNSIGNED_INT, 0);
+
+    // Draw the grid (m_gridX * m_gridY quads, 6 vertices per quad)
+    glDrawElements(GL_TRIANGLES, m_gridX * m_gridY * 6, GL_UNSIGNED_INT, nullptr);
+
+    // No need to unbind every time
+    //VertexArrayObject::Unbind();
 }
 
 void TerrainApplication::Cleanup()
 {
     Application::Cleanup();
+}
+
+Vector3 GetColorFromHeight(float height)
+{
+    if (height > 0.3f)
+    {
+        return Vector3(1.0f, 1.0f, 1.0f); // Snow
+    }
+    else if (height > 0.1f)
+    {
+        return Vector3(0.3, 0.3f, 0.35f); // Rock
+    }
+    else if (height > -0.05f)
+    {
+        return Vector3(0.1, 0.4f, 0.15f); // Grass
+    }
+    else if (height > -0.1f)
+    {
+        return Vector3(0.6, 0.5f, 0.4f); // Sand
+    }
+    else
+    {
+        return Vector3(0.1f, 0.1f, 0.3f); // Water
+    }
 }
 
 void TerrainApplication::BuildShaders()
@@ -357,19 +263,19 @@ void TerrainApplication::BuildShaders()
         "   switch (Mode)\n"
         "   {\n"
         "   default:\n"
-        "   case 0:\n"
+        "   case 0u:\n"
         "       FragColor = vec4(1.0f, 1.0f, 1.0f, 1.0f);\n"
         "       break;\n"
-        "   case 1:\n"
+        "   case 1u:\n"
         "       FragColor = vec4(fract(texCoord), 0.0f, 1.0f);\n"
         "       break;\n"
-        "   case 2:\n"
+        "   case 2u:\n"
         "       FragColor = vec4(color, 1.0f);\n"
         "       break;\n"
-        "   case 3:\n"
+        "   case 3u:\n"
         "       FragColor = vec4(normalize(normal), 1.0f);\n"
         "       break;\n"
-        "   case 4:\n"
+        "   case 4u:\n"
         "       FragColor = vec4(color * max(dot(normalize(normal), normalize(vec3(1,0,1))), 0.2f), 1.0f);\n"
         "       break;\n"
         "   }\n"

@@ -192,8 +192,6 @@ build libraries/glad/CMakeFiles/glad.dir/src/glad.c.o: C_COMPILER__glad_Debug /U
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/glad/CMakeFiles/glad.dir
   OBJECT_FILE_DIR = libraries/glad/CMakeFiles/glad.dir/src
-  TARGET_COMPILE_PDB = libraries/glad/CMakeFiles/glad.dir/glad.pdb
-  TARGET_PDB = libraries/glad/libglad.pdb
 
 
 # =============================================================================
@@ -209,9 +207,8 @@ build libraries/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug libraries/gl
   OBJECT_DIR = libraries/glad/CMakeFiles/glad.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libraries/glad/CMakeFiles/glad.dir/glad.pdb
   TARGET_FILE = libraries/glad/libglad.a
-  TARGET_PDB = libraries/glad/libglad.pdb
+  TARGET_PDB = glad.a.dbg
 
 
 #############################################
@@ -382,8 +379,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_Debug
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -392,8 +387,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Debug /U
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -402,8 +395,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Debug /
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -412,8 +403,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Debug
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -422,8 +411,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Debug 
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -432,8 +419,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Debug 
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -442,8 +427,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_De
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -452,8 +435,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glf
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -462,8 +443,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -472,8 +451,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -482,8 +459,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_De
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -492,8 +467,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -502,8 +475,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -512,8 +483,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_D
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 build libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -522,8 +491,6 @@ build libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glf
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/src" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src"
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
 
 
 # =============================================================================
@@ -539,9 +506,8 @@ build libraries/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug librari
   OBJECT_DIR = libraries/glfw/src/CMakeFiles/glfw.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libraries/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
   TARGET_FILE = libraries/glfw/src/libglfw3.a
-  TARGET_PDB = libraries/glfw/src/libglfw3.pdb
+  TARGET_PDB = glfw3.a.dbg
 
 
 #############################################
@@ -628,8 +594,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Application.cpp
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Window.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/application/Window.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Window.cpp.o.d
@@ -637,8 +601,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Window.cpp.o: C
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/BufferObject.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/core/BufferObject.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/BufferObject.cpp.o.d
@@ -646,8 +608,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/BufferObject.cpp.o: CX
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Color.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/core/Color.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Color.cpp.o.d
@@ -655,8 +615,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Color.cpp.o: CXX_COMPI
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Data.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/core/Data.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Data.cpp.o.d
@@ -664,8 +622,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Data.cpp.o: CXX_COMPIL
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/DeviceGL.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/core/DeviceGL.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/DeviceGL.cpp.o.d
@@ -673,8 +629,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/DeviceGL.cpp.o: CXX_CO
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Object.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/core/Object.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Object.cpp.o.d
@@ -682,8 +636,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Object.cpp.o: CXX_COMP
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/ElementBufferObject.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/geometry/ElementBufferObject.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/ElementBufferObject.cpp.o.d
@@ -691,8 +643,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/ElementBufferObjec
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/geometry/VertexArrayObject.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.cpp.o.d
@@ -700,8 +650,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexAttribute.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/geometry/VertexAttribute.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexAttribute.cpp.o.d
@@ -709,8 +657,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexAttribute.cp
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexBufferObject.cpp.o: CXX_COMPILER__itugl_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/libraries/itugl/src/ituGL/geometry/VertexBufferObject.cpp || cmake_object_order_depends_target_itugl
   DEP_FILE = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexBufferObject.cpp.o.d
@@ -718,8 +664,6 @@ build libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexBufferObject
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   OBJECT_FILE_DIR = libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
-  TARGET_PDB = libraries/itugl/libitugl.pdb
 
 
 # =============================================================================
@@ -735,9 +679,8 @@ build libraries/itugl/libitugl.a: CXX_STATIC_LIBRARY_LINKER__itugl_Debug librari
   OBJECT_DIR = libraries/itugl/CMakeFiles/itugl.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libraries/itugl/CMakeFiles/itugl.dir/itugl.pdb
   TARGET_FILE = libraries/itugl/libitugl.a
-  TARGET_PDB = libraries/itugl/libitugl.pdb
+  TARGET_PDB = itugl.a.dbg
 
 
 #############################################
@@ -964,8 +907,6 @@ build exercises/exercise00/CMakeFiles/exercise00.dir/main.cpp.o: CXX_COMPILER__e
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = exercises/exercise00/CMakeFiles/exercise00.dir
   OBJECT_FILE_DIR = exercises/exercise00/CMakeFiles/exercise00.dir
-  TARGET_COMPILE_PDB = exercises/exercise00/CMakeFiles/exercise00.dir/
-  TARGET_PDB = exercises/exercise00/exercise00.pdb
 
 
 # =============================================================================
@@ -981,9 +922,8 @@ build exercises/exercise00/exercise00: CXX_EXECUTABLE_LINKER__exercise00_Debug e
   OBJECT_DIR = exercises/exercise00/CMakeFiles/exercise00.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = exercises/exercise00/CMakeFiles/exercise00.dir/
   TARGET_FILE = exercises/exercise00/exercise00
-  TARGET_PDB = exercises/exercise00/exercise00.pdb
+  TARGET_PDB = exercise00.dbg
 
 
 #############################################
@@ -1070,8 +1010,6 @@ build exercises/exercise01/CMakeFiles/exercise01.dir/TerrainApplication.cpp.o: C
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = exercises/exercise01/CMakeFiles/exercise01.dir
   OBJECT_FILE_DIR = exercises/exercise01/CMakeFiles/exercise01.dir
-  TARGET_COMPILE_PDB = exercises/exercise01/CMakeFiles/exercise01.dir/
-  TARGET_PDB = exercises/exercise01/exercise01.pdb
 
 build exercises/exercise01/CMakeFiles/exercise01.dir/main.cpp.o: CXX_COMPILER__exercise01_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/exercises/exercise01/main.cpp || cmake_object_order_depends_target_exercise01
   DEP_FILE = exercises/exercise01/CMakeFiles/exercise01.dir/main.cpp.o.d
@@ -1079,8 +1017,6 @@ build exercises/exercise01/CMakeFiles/exercise01.dir/main.cpp.o: CXX_COMPILER__e
   INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
   OBJECT_DIR = exercises/exercise01/CMakeFiles/exercise01.dir
   OBJECT_FILE_DIR = exercises/exercise01/CMakeFiles/exercise01.dir
-  TARGET_COMPILE_PDB = exercises/exercise01/CMakeFiles/exercise01.dir/
-  TARGET_PDB = exercises/exercise01/exercise01.pdb
 
 
 # =============================================================================
@@ -1096,9 +1032,8 @@ build exercises/exercise01/exercise01: CXX_EXECUTABLE_LINKER__exercise01_Debug e
   OBJECT_DIR = exercises/exercise01/CMakeFiles/exercise01.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = exercises/exercise01/CMakeFiles/exercise01.dir/
   TARGET_FILE = exercises/exercise01/exercise01
-  TARGET_PDB = exercises/exercise01/exercise01.pdb
+  TARGET_PDB = exercise01.dbg
 
 
 #############################################
@@ -1166,11 +1101,123 @@ build exercises/exercise01/CMakeFiles/install/strip.util: CUSTOM_COMMAND exercis
 build exercises/exercise01/install/strip: phony exercises/exercise01/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target exercise02
+
+
+#############################################
+# Order-only phony target for exercise02
+
+build cmake_object_order_depends_target_exercise02: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_itugl
+
+build exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o: CXX_COMPILER__exercise02_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/exercises/exercise02/ParticlesApplication.cpp || cmake_object_order_depends_target_exercise02
+  DEP_FILE = exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -std=c++20
+  INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
+  OBJECT_DIR = exercises/exercise02/CMakeFiles/exercise02.dir
+  OBJECT_FILE_DIR = exercises/exercise02/CMakeFiles/exercise02.dir
+
+build exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o: CXX_COMPILER__exercise02_Debug /Users/giorgioperri/Desktop/ITU/S2/Graphics$ Programming/graphics-programming-2023/exercises/exercise02/main.cpp || cmake_object_order_depends_target_exercise02
+  DEP_FILE = exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -std=c++20
+  INCLUDES = -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glad/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glfw/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/imgui/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/glm/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/stb/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp/include" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/assimp" -I"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/libraries/itugl/include"
+  OBJECT_DIR = exercises/exercise02/CMakeFiles/exercise02.dir
+  OBJECT_FILE_DIR = exercises/exercise02/CMakeFiles/exercise02.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target exercise02
+
+
+#############################################
+# Link the executable exercises/exercise02/exercise02
+
+build exercises/exercise02/exercise02: CXX_EXECUTABLE_LINKER__exercise02_Debug exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o | libraries/glad/libglad.a libraries/glfw/src/libglfw3.a libraries/itugl/libitugl.a || libraries/glad/libglad.a libraries/glfw/src/libglfw3.a libraries/itugl/libitugl.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0
+  LINK_LIBRARIES = libraries/glad/libglad.a  libraries/glfw/src/libglfw3.a  libraries/itugl/libitugl.a  -framework  OpenGL  -framework  Cocoa  -framework  IOKit  -framework  CoreVideo  -framework Cocoa  -framework IOKit  -framework CoreFoundation
+  OBJECT_DIR = exercises/exercise02/CMakeFiles/exercise02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = exercises/exercise02/exercise02
+  TARGET_PDB = exercise02.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build exercises/exercise02/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build exercises/exercise02/edit_cache: phony exercises/exercise02/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build exercises/exercise02/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023" -B"/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build exercises/exercise02/rebuild_cache: phony exercises/exercise02/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build exercises/exercise02/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build exercises/exercise02/CMakeFiles/install.util: CUSTOM_COMMAND exercises/exercise02/all
+  COMMAND = cd "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build exercises/exercise02/install: phony exercises/exercise02/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build exercises/exercise02/CMakeFiles/install/local.util: CUSTOM_COMMAND exercises/exercise02/all
+  COMMAND = cd "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build exercises/exercise02/install/local: phony exercises/exercise02/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build exercises/exercise02/CMakeFiles/install/strip.util: CUSTOM_COMMAND exercises/exercise02/all
+  COMMAND = cd "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build exercises/exercise02/install/strip: phony exercises/exercise02/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build exercise00: phony exercises/exercise00/exercise00
 
 build exercise01: phony exercises/exercise01/exercise01
+
+build exercise02: phony exercises/exercise02/exercise02
 
 build glad: phony libraries/glad/libglad.a
 
@@ -1201,7 +1248,7 @@ build all: phony libraries/all exercises/all
 #############################################
 # Folder: /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises
 
-build exercises/all: phony exercises/exercise00/all exercises/exercise01/all
+build exercises/all: phony exercises/exercise00/all exercises/exercise01/all exercises/exercise02/all
 
 # =============================================================================
 
@@ -1216,6 +1263,13 @@ build exercises/exercise00/all: phony exercises/exercise00/exercise00
 # Folder: /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise01
 
 build exercises/exercise01/all: phony exercises/exercise01/exercise01
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02
+
+build exercises/exercise02/all: phony exercises/exercise02/exercise02
 
 # =============================================================================
 
@@ -1266,14 +1320,14 @@ build libraries/stb/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../exercises/CMakeLists.txt ../exercises/exercise00/CMakeLists.txt ../exercises/exercise01/CMakeLists.txt ../libraries/CMakeLists.txt ../libraries/glad/CMakeLists.txt ../libraries/glfw/CMakeLists.txt ../libraries/glfw/cmake_uninstall.cmake.in ../libraries/glfw/src/CMakeLists.txt ../libraries/glfw/src/glfw3.pc.in ../libraries/glfw/src/glfw3Config.cmake.in ../libraries/glfw/src/glfw_config.h.in ../libraries/itugl/CMakeLists.txt ../libraries/stb/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.c.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../exercises/CMakeLists.txt ../exercises/exercise00/CMakeLists.txt ../exercises/exercise01/CMakeLists.txt ../exercises/exercise02/CMakeLists.txt ../libraries/CMakeLists.txt ../libraries/glad/CMakeLists.txt ../libraries/glfw/CMakeLists.txt ../libraries/glfw/cmake_uninstall.cmake.in ../libraries/glfw/src/CMakeLists.txt ../libraries/glfw/src/glfw3.pc.in ../libraries/glfw/src/glfw3Config.cmake.in ../libraries/glfw/src/glfw_config.h.in ../libraries/itugl/CMakeLists.txt ../libraries/stb/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../exercises/CMakeLists.txt ../exercises/exercise00/CMakeLists.txt ../exercises/exercise01/CMakeLists.txt ../libraries/CMakeLists.txt ../libraries/glad/CMakeLists.txt ../libraries/glfw/CMakeLists.txt ../libraries/glfw/cmake_uninstall.cmake.in ../libraries/glfw/src/CMakeLists.txt ../libraries/glfw/src/glfw3.pc.in ../libraries/glfw/src/glfw3Config.cmake.in ../libraries/glfw/src/glfw_config.h.in ../libraries/itugl/CMakeLists.txt ../libraries/stb/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.c.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../exercises/CMakeLists.txt ../exercises/exercise00/CMakeLists.txt ../exercises/exercise01/CMakeLists.txt ../exercises/exercise02/CMakeLists.txt ../libraries/CMakeLists.txt ../libraries/glad/CMakeLists.txt ../libraries/glfw/CMakeLists.txt ../libraries/glfw/cmake_uninstall.cmake.in ../libraries/glfw/src/CMakeLists.txt ../libraries/glfw/src/glfw3.pc.in ../libraries/glfw/src/glfw3Config.cmake.in ../libraries/glfw/src/glfw_config.h.in ../libraries/itugl/CMakeLists.txt ../libraries/stb/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################
