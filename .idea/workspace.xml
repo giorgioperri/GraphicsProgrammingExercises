@@ -31,9 +31,13 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/exercise02" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/exercise02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/shader/ShaderProgram.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/shader/ShaderProgram.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/libitugl.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/libitugl.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise02/shaders/particles.frag" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/shaders/particles.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise02/shaders/particles.vert" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/shaders/particles.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/itugl/src/ituGL/shader/ShaderProgram.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/src/ituGL/shader/ShaderProgram.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,18 +64,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/exercise01&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/exercise01",
+    "settings.editor.selected.configurable": "CMakeSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/exercises/exercise01" />

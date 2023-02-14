@@ -143,9 +143,7 @@ ShaderProgram::Location ShaderProgram::GetUniformLocation(const char* name) cons
 
     Handle handle = GetHandle();
 
-    glGetUniformLocation(handle, name);
-
-    return -1;
+    return glGetUniformLocation(handle, name);
 }
 
 
