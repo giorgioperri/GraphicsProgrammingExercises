@@ -31,6 +31,12 @@
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/CMakeFiles/install.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/CMakeFiles/install/local.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glfw/src/CMakeFiles/install/strip.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glm/CMakeFiles/edit_cache.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glm/CMakeFiles/rebuild_cache.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glm/CMakeFiles/list_install_components.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glm/CMakeFiles/install.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glm/CMakeFiles/install/local.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/glm/CMakeFiles/install/strip.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/itugl/CMakeFiles/edit_cache.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/libraries/itugl/CMakeFiles/rebuild_cache.dir
