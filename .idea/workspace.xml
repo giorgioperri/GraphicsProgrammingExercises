@@ -25,41 +25,15 @@
   <component name="ChangeListManager">
     <list default="true" id="defce34c-652e-47ea-85c6-87a1c275aa62" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-fd07bdbf9e1b48fe0f79.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-ab0ab07b56aad28b4940.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-72e8679c57d9393126c5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-02-14T10-13-51-0104.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-itugl-Debug-5e96fb5357a09f59c279.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/glad/libglad.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/glad/libglad.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/glfw/src/libglfw3.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/glfw/src/libglfw3.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Application.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Application.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Window.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/application/Window.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/BufferObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/BufferObject.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/DeviceGL.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/DeviceGL.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Object.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/core/Object.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/ElementBufferObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/ElementBufferObject.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexArrayObject.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexBufferObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/geometry/VertexBufferObject.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/libitugl.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/libitugl.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/application/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/application/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/BufferObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/BufferObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/Color.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/Color.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/DeviceGL.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/DeviceGL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/Object.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/core/Object.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/geometry/ElementBufferObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/geometry/ElementBufferObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/include/ituGL/geometry/VertexArrayObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/include/ituGL/geometry/VertexArrayObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/src/ituGL/application/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/src/ituGL/application/Window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/src/ituGL/core/BufferObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/src/ituGL/core/BufferObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/src/ituGL/core/DeviceGL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/src/ituGL/core/DeviceGL.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/src/ituGL/geometry/ElementBufferObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/src/ituGL/geometry/ElementBufferObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/itugl/src/ituGL/geometry/VertexArrayObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/itugl/src/ituGL/geometry/VertexArrayObject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/ParticlesApplication.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/CMakeFiles/exercise02.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/exercise02" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise02/exercise02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/ParticlesApplication.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise02/shaders/particles.vert" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise02/shaders/particles.vert" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
