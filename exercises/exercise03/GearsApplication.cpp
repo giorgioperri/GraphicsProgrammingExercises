@@ -54,11 +54,15 @@ void GearsApplication::Render()
 
 
     // (todo) 03.1: Draw large gear at the center
-    glm::mat4 centerGearMatrix(1.0f);
-    DrawGear(m_largeGear, centerGearMatrix, Color(1.0f, 1.0f, 1.0f));
+    glm::mat4 largeRotationMatrix = glm::rotate(1 * GetCurrentTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+    glm::mat4 largeGearMatrix = glm::mat4(1.0f) * largeRotationMatrix;
+    DrawGear(m_largeGear, largeGearMatrix, Color(1.0f, 1.0f, 1.0f));
+
 
     // (todo) 03.2: Draw medium gear to the right
-
+    glm::mat4 mediumRotationMatrix = glm::rotate(-2 * GetCurrentTime() , glm::vec3(0.0f, 0.0f, 1.0f));
+    glm::mat4 mediumGearMatrix = glm::translate(glm::vec3(0.75f, 0.0f, 0.0f)) * mediumRotationMatrix;
+    DrawGear(m_mediumGear, mediumGearMatrix, Color(0.51f, 0.23f, 0.84f));
 
     // (todo) 03.3: Draw small gear at the top-left corner
 
@@ -111,7 +115,7 @@ void GearsApplication::DrawGear(const Mesh& mesh, const glm::mat4& worldMatrix, 
     m_shaderProgram.SetUniform(m_colorUniform, static_cast<glm::vec3>(color));
 
     // (todo) 03.1: Set the value of the WorldMatrix uniform
-    m_shaderProgram.SetUniform(m_worldMatrixUniform, glm::rotate(1.0f * GetCurrentTime(), glm::vec3(0.0f, 0.0f, 1.0f)));
+    m_shaderProgram.SetUniform(m_worldMatrixUniform, worldMatrix);
 
     mesh.DrawSubmesh(0);
 }
