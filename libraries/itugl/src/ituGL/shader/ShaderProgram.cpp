@@ -78,22 +78,14 @@ void ShaderProgram::AttachShader(const Shader& shader)
     assert(!IsLinked());
     assert(shader.IsValid());
     assert(shader.IsCompiled());
-
-    Handle shaderProgramHandle = GetHandle();
-    Handle shaderHandle = shader.GetHandle();
-
-    glAttachShader(shaderProgramHandle, shaderHandle);
+    glAttachShader(GetHandle(), shader.GetHandle());
 }
 
 // Link currently attached shaders
 bool ShaderProgram::Link()
 {
     assert(IsValid());
-
-    Handle handle = GetHandle();
-
-    glLinkProgram(handle);
-
+    glLinkProgram(GetHandle());
     return IsLinked();
 }
 
@@ -140,10 +132,7 @@ ShaderProgram::Location ShaderProgram::GetUniformLocation(const char* name) cons
 {
     assert(IsValid());
     assert(IsLinked());
-
-    Handle handle = GetHandle();
-
-    return glGetUniformLocation(handle, name);
+    return glGetUniformLocation(GetHandle(), name);
 }
 
 

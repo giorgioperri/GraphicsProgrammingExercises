@@ -99,10 +99,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				13,
-				14,
-				15,
-				16,
 				17,
 				18,
 				19,
@@ -111,7 +107,15 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33
 			]
 		}
 	],
@@ -141,17 +145,17 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13,
+				14,
+				15,
+				16
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				13,
-				14,
-				15,
-				16,
 				17,
 				18,
 				19,
@@ -160,7 +164,15 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33
 			]
 		}
 	],
@@ -174,6 +186,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/application/Window.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/camera/Camera.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -203,7 +220,17 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/geometry/Drawcall.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/ElementBufferObject.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/geometry/Mesh.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -219,6 +246,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/VertexBufferObject.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/geometry/VertexFormat.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -241,6 +273,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/application/Window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/camera/Camera.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -276,7 +314,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/geometry/Drawcall.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/ElementBufferObject.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/geometry/Mesh.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -295,6 +345,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/VertexBufferObject.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/geometry/VertexFormat.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
