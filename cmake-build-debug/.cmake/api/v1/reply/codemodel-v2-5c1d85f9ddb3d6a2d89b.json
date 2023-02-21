@@ -52,7 +52,7 @@
 					"source" : "libraries/glad",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -62,7 +62,7 @@
 						4
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw-Debug-680758f63b641483ddb1.json",
+					"jsonFile" : "directory-libraries.glfw-Debug-c708674ff4c4474e0b4b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -72,13 +72,13 @@
 					"source" : "libraries/glfw",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
 					"build" : "libraries/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw.src-Debug-bc2105656ad2ace59f93.json",
+					"jsonFile" : "directory-libraries.glfw.src-Debug-3b51c9b8f55c9bc936d2.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -88,7 +88,7 @@
 					"source" : "libraries/glfw/src",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -114,7 +114,7 @@
 					"source" : "libraries/itugl",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -134,7 +134,8 @@
 					[
 						9,
 						10,
-						11
+						11,
+						12
 					],
 					"jsonFile" : "directory-exercises-Debug-673fc602a1af190536af.json",
 					"minimumCMakeVersion" : 
@@ -189,6 +190,21 @@
 					[
 						2
 					]
+				},
+				{
+					"build" : "exercises/exercise03",
+					"jsonFile" : "directory-exercises.exercise03-Debug-34e531687d86caf60ca0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.3"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "exercises/exercise03",
+					"targetIndexes" : 
+					[
+						3
+					]
 				}
 			],
 			"name" : "Debug",
@@ -210,7 +226,8 @@
 						8,
 						9,
 						10,
-						11
+						11,
+						12
 					],
 					"name" : "ITU-graphics-programming",
 					"targetIndexes" : 
@@ -219,7 +236,8 @@
 						1,
 						2,
 						3,
-						5
+						4,
+						6
 					]
 				},
 				{
@@ -232,8 +250,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						4,
-						6
+						5,
+						7
 					]
 				}
 			],
@@ -258,6 +276,13 @@
 					"id" : "exercise02::@95d9f264b811cdd50121",
 					"jsonFile" : "target-exercise02-Debug-78e1fc861f13c9365994.json",
 					"name" : "exercise02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "exercise03::@2fac78b1145a44f8620b",
+					"jsonFile" : "target-exercise03-Debug-fdb5b640861cb13f596c.json",
+					"name" : "exercise03",
 					"projectIndex" : 0
 				},
 				{
