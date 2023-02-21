@@ -40,10 +40,13 @@ void GearsApplication::Update()
     window.GetDimensions(width, height);
     float aspect = static_cast<float>(width) / static_cast<float>(height);
 
-    m_camera.SetViewMatrix(glm::vec3(0, 0, 50), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));
+    m_camera.SetViewMatrix(glm::vec3(window.GetMousePosition(true).x, window.GetMousePosition(true).y, 2), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));
 
     //set the orthographic projection matrix
     m_camera.SetOrthographicProjectionMatrix(glm::vec3(-aspect, -1, -100), glm::vec3(aspect, 1, 100));
+
+    //set the perspective projection matrix
+    //m_camera.SetPerspectiveProjectionMatrix(M_PI/2, aspect, -0.5f, 0.5f);
 }
 
 void GearsApplication::Render()
@@ -69,7 +72,7 @@ void GearsApplication::Render()
 
     // (todo) 03.3: Draw small gear at the top-left corner
     glm::mat4 smallRotationMatrix = glm::rotate(1 + -(4 / 7.5f) * GetCurrentTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-    glm::mat4 smallScaleMatrix = glm::scale(glm::vec3(7.5f, 7.5f, 1));
+    glm::mat4 smallScaleMatrix = glm::scale(glm::vec3(7.5f, 7.5f, 7.5f));
     glm::mat4 smallGearMatrix = glm::translate(glm::vec3(-1, 1, 0.0f)) * smallScaleMatrix * smallRotationMatrix;
     DrawGear(m_smallGear, smallGearMatrix, Color(0.0f, 0.0f, 1.0f));
 
