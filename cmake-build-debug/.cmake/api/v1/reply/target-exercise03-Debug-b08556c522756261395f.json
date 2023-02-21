@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "exercises/exercise01/exercise01"
+			"path" : "exercises/exercise03/exercise03"
 		}
 	],
 	"backtrace" : 1,
@@ -16,7 +16,7 @@
 		],
 		"files" : 
 		[
-			"exercises/exercise01/CMakeLists.txt",
+			"exercises/exercise03/CMakeLists.txt",
 			"libraries/glfw/src/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 8,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -63,7 +63,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0"
+					"fragment" : "-g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0"
 				},
 				{
 					"fragment" : "-std=c++20"
@@ -124,22 +124,22 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "itugl::@6e4f4d1442f75f8f2949"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "glad::@3dc4ab03f6fdfa199928"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@7d8f67159c48f691a52d"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "itugl::@6e4f4d1442f75f8f2949"
 		}
 	],
 	"folder" : 
 	{
-		"name" : "exercises/exercise01"
+		"name" : "exercises/exercise03"
 	},
-	"id" : "exercise01::@d0eafce78031fbabb6ed",
+	"id" : "exercise03::@2fac78b1145a44f8620b",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -217,12 +217,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "exercise01",
-	"nameOnDisk" : "exercise01",
+	"name" : "exercise03",
+	"nameOnDisk" : "exercise03",
 	"paths" : 
 	{
-		"build" : "exercises/exercise01",
-		"source" : "exercises/exercise01"
+		"build" : "exercises/exercise03",
+		"source" : "exercises/exercise03"
 	},
 	"sourceGroups" : 
 	[
@@ -240,26 +240,44 @@
 				1,
 				2
 			]
+		},
+		{
+			"name" : "Shaders",
+			"sourceIndexes" : 
+			[
+				3,
+				4
+			]
 		}
 	],
 	"sources" : 
 	[
 		{
 			"backtrace" : 1,
-			"path" : "exercises/exercise01/TerrainApplication.h",
+			"path" : "exercises/exercise03/GearsApplication.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "exercises/exercise01/TerrainApplication.cpp",
+			"path" : "exercises/exercise03/GearsApplication.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "exercises/exercise01/main.cpp",
+			"path" : "exercises/exercise03/main.cpp",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "exercises/exercise03/shaders/basic.frag",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "exercises/exercise03/shaders/basic.vert",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

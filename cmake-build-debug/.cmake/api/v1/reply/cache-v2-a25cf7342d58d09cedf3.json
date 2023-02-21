@@ -1015,7 +1015,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "x86_64"
 		},
 		{
 			"name" : "CMAKE_OSX_DEPLOYMENT_TARGET",
