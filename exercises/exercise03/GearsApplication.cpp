@@ -27,9 +27,7 @@ void GearsApplication::Initialize()
     InitializeShaders();
 
     GetDevice().EnableFeature(GL_DEPTH_TEST);
-
-    m_worldMatrixUniform = m_shaderProgram.GetUniformLocation("WorldMatrix");
-}
+   }
 
 void GearsApplication::Update()
 {
@@ -38,8 +36,14 @@ void GearsApplication::Update()
     const Window& window = GetMainWindow();
 
     // (todo) 03.5: Update the camera matrices
+    int width, height;
+    window.GetDimensions(width, height);
+    float aspect = static_cast<float>(width) / static_cast<float>(height);
 
+    m_camera.SetViewMatrix(glm::vec3(0, 0, 50), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));
 
+    //set the orthographic projection matrix
+    m_camera.SetOrthographicProjectionMatrix(glm::vec3(-aspect, -1, -100), glm::vec3(aspect, 1, 100));
 }
 
 void GearsApplication::Render()
@@ -51,6 +55,7 @@ void GearsApplication::Render()
     m_shaderProgram.Use();
 
     // (todo) 03.5: Set the view projection matrix from the camera. Once set, we will use it for all the objects
+    m_shaderProgram.SetUniform(m_viewProjMatrixUniform, m_camera.GetViewProjectionMatrix());
 
     // (todo) 03.1: Draw large gear at the center
     glm::mat4 largeRotationMatrix = glm::rotate(1 * GetCurrentTime(), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -105,10 +110,10 @@ void GearsApplication::InitializeShaders()
     m_colorUniform = m_shaderProgram.GetUniformLocation("Color");
 
     // (todo) 03.1: Find the WorldMatrix uniform location
-
+    m_worldMatrixUniform = m_shaderProgram.GetUniformLocation("WorldMatrix");
 
     // (todo) 03.5: Find the ViewProjMatrix uniform location
-
+    m_viewProjMatrixUniform = m_shaderProgram.GetUniformLocation("ViewProjMatrix");
 
 }
 
