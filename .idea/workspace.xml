@@ -26,12 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="defce34c-652e-47ea-85c6-87a1c275aa62" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise03/CMakeFiles/exercise03.dir/GearsApplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise03/CMakeFiles/exercise03.dir/GearsApplication.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise03/exercise03" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise03/exercise03" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/exercise03/GearsApplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise03/GearsApplication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise03/shaders/basic.frag" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise03/shaders/basic.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise03/shaders/basic.vert" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise03/shaders/basic.vert" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +144,7 @@
       <workItem from="1676968138311" duration="44000" />
       <workItem from="1676968263419" duration="352000" />
       <workItem from="1676968692154" duration="39000" />
-      <workItem from="1676992216408" duration="9657000" />
+      <workItem from="1676992216408" duration="11522000" />
     </task>
     <servers />
   </component>
