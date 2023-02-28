@@ -44,6 +44,7 @@ private:
 
     Mesh m_terrainPatch;
     std::shared_ptr<Material> m_defaultMaterial;
+    std::shared_ptr<Material> m_terrainMaterial;
 
     // (todo) 04.X: Add additional materials
 
