@@ -29,8 +29,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defce34c-652e-47ea-85c6-87a1c275aa62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
@@ -40,6 +38,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/exercise04" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/exercise04" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.vert" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.vert" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
