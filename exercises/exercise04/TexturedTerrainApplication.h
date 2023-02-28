@@ -47,8 +47,10 @@ private:
 
     // (todo) 04.X: Add additional materials
 
-
     std::shared_ptr<Texture2DObject> m_defaultTexture;
 
     // (todo) 04.X: Add additional textures
+
+    std::shared_ptr<Texture2DObject> m_heightMap;
+    std::vector<float> m_heightMapData;
 };

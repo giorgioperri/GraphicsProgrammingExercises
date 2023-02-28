@@ -53,3 +53,8 @@
 1811	2029	1677569284314346497	libraries/itugl/CMakeFiles/itugl.dir/src/ituGL/texture/TextureObject.cpp.o	122979b6a5ee497e
 1	627	1677569282908111033	libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o	44985b349b4dca11
 1821	2564	1677569284846826088	exercises/exercise04/CMakeFiles/exercise04.dir/TexturedTerrainApplication.cpp.o	ee1ab9a13c3978d
+78	916	1677576975216927667	exercises/exercise04/CMakeFiles/exercise04.dir/main.cpp.o	92c3892c5c11a058
+77	1220	1677576975520877471	exercises/exercise04/CMakeFiles/exercise04.dir/TexturedTerrainApplication.cpp.o	ee1ab9a13c3978d
+1220	1400	1677576975703559787	exercises/exercise04/exercise04	ecbed4157ff3c422
+68	1076	1677577036981266704	exercises/exercise04/CMakeFiles/exercise04.dir/TexturedTerrainApplication.cpp.o	ee1ab9a13c3978d
+1076	1237	1677577037146164677	exercises/exercise04/exercise04	ecbed4157ff3c422
