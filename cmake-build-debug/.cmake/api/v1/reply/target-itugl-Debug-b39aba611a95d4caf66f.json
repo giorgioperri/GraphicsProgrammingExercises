@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 4,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -47,7 +47,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0"
+					"fragment" : "-g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
 				},
 				{
 					"fragment" : "-std=c++20"
@@ -99,12 +99,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				17,
-				18,
-				19,
-				20,
-				21,
-				22,
 				23,
 				24,
 				25,
@@ -115,7 +109,19 @@
 				30,
 				31,
 				32,
-				33
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45
 			]
 		}
 	],
@@ -130,49 +136,91 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Header Files",
+			"name" : "application",
 			"sourceIndexes" : 
 			[
 				0,
 				1,
+				23,
+				24
+			]
+		},
+		{
+			"name" : "asset",
+			"sourceIndexes" : 
+			[
 				2,
 				3,
+				25,
+				26
+			]
+		},
+		{
+			"name" : "camera",
+			"sourceIndexes" : 
+			[
 				4,
+				27
+			]
+		},
+		{
+			"name" : "core",
+			"sourceIndexes" : 
+			[
 				5,
 				6,
 				7,
 				8,
 				9,
+				28,
+				29,
+				30,
+				31,
+				32
+			]
+		},
+		{
+			"name" : "geometry",
+			"sourceIndexes" : 
+			[
 				10,
 				11,
 				12,
 				13,
 				14,
 				15,
-				16
+				16,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39
 			]
 		},
 		{
-			"name" : "Source Files",
+			"name" : "shader",
 			"sourceIndexes" : 
 			[
 				17,
 				18,
 				19,
 				20,
+				40,
+				41,
+				42,
+				43
+			]
+		},
+		{
+			"name" : "texture",
+			"sourceIndexes" : 
+			[
 				21,
 				22,
-				23,
-				24,
-				25,
-				26,
-				27,
-				28,
-				29,
-				30,
-				31,
-				32,
-				33
+				44,
+				45
 			]
 		}
 	],
@@ -190,180 +238,246 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/asset/AssetLoader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/asset/ShaderLoader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/camera/Camera.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/core/BufferObject.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/core/Color.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/core/Data.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/core/DeviceGL.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/core/Object.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/Drawcall.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/ElementBufferObject.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/Mesh.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/VertexArrayObject.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/VertexAttribute.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/VertexBufferObject.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/geometry/VertexFormat.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/shader/Material.h",
+			"sourceGroupIndex" : 5
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/shader/Shader.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 5
 		},
 		{
 			"backtrace" : 1,
 			"path" : "libraries/itugl/include/ituGL/shader/ShaderProgram.h",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/shader/ShaderUniformCollection.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/texture/Texture2DObject.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libraries/itugl/include/ituGL/texture/TextureObject.h",
+			"sourceGroupIndex" : 6
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/application/Application.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/application/Window.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/asset/AssetLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/asset/ShaderLoader.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/camera/Camera.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/core/BufferObject.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/core/Color.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/core/Data.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/core/DeviceGL.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/core/Object.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/Drawcall.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/ElementBufferObject.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/Mesh.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/VertexArrayObject.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/VertexAttribute.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/VertexBufferObject.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/geometry/VertexFormat.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/shader/Material.cpp",
+			"sourceGroupIndex" : 5
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/shader/Shader.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 5
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libraries/itugl/src/ituGL/shader/ShaderProgram.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/shader/ShaderUniformCollection.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/texture/Texture2DObject.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libraries/itugl/src/ituGL/texture/TextureObject.cpp",
+			"sourceGroupIndex" : 6
 		}
 	],
 	"type" : "STATIC_LIBRARY"

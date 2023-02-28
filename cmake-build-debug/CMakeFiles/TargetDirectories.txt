@@ -84,3 +84,10 @@
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise03/CMakeFiles/install.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise03/CMakeFiles/install/local.dir
 /Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise03/CMakeFiles/install/strip.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/exercise04.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/edit_cache.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/rebuild_cache.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/list_install_components.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/install.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/install/local.dir
+/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/CMakeFiles/install/strip.dir

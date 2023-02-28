@@ -63,7 +63,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0"
+					"fragment" : "-g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
 				},
 				{
 					"fragment" : "-std=c++20"
@@ -124,15 +124,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "itugl::@6e4f4d1442f75f8f2949"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "glad::@3dc4ab03f6fdfa199928"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@7d8f67159c48f691a52d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "itugl::@6e4f4d1442f75f8f2949"
 		}
 	],
 	"folder" : 
@@ -168,35 +168,19 @@
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-framework",
+				"fragment" : "-Xlinker -framework -Xlinker OpenGL",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "OpenGL",
+				"fragment" : "-Xlinker -framework -Xlinker Cocoa",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-framework",
+				"fragment" : "-Xlinker -framework -Xlinker IOKit",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "Cocoa",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-framework",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "IOKit",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-framework",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "CoreVideo",
+				"fragment" : "-Xlinker -framework -Xlinker CoreVideo",
 				"role" : "libraries"
 			},
 			{

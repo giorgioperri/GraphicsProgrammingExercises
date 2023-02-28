@@ -52,7 +52,7 @@
 					"source" : "libraries/glad",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -62,7 +62,7 @@
 						4
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw-Debug-c708674ff4c4474e0b4b.json",
+					"jsonFile" : "directory-libraries.glfw-Debug-e55370042876613b792d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -72,13 +72,13 @@
 					"source" : "libraries/glfw",
 					"targetIndexes" : 
 					[
-						7
+						8
 					]
 				},
 				{
 					"build" : "libraries/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw.src-Debug-3b51c9b8f55c9bc936d2.json",
+					"jsonFile" : "directory-libraries.glfw.src-Debug-05a985d4056839f29e4d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -88,7 +88,7 @@
 					"source" : "libraries/glfw/src",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -114,7 +114,7 @@
 					"source" : "libraries/itugl",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -135,7 +135,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					],
 					"jsonFile" : "directory-exercises-Debug-673fc602a1af190536af.json",
 					"minimumCMakeVersion" : 
@@ -205,6 +206,21 @@
 					[
 						3
 					]
+				},
+				{
+					"build" : "exercises/exercise04",
+					"jsonFile" : "directory-exercises.exercise04-Debug-59bc7077070305d27aec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.3"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "exercises/exercise04",
+					"targetIndexes" : 
+					[
+						4
+					]
 				}
 			],
 			"name" : "Debug",
@@ -227,7 +243,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					],
 					"name" : "ITU-graphics-programming",
 					"targetIndexes" : 
@@ -237,7 +254,8 @@
 						2,
 						3,
 						4,
-						6
+						5,
+						7
 					]
 				},
 				{
@@ -250,8 +268,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						5,
-						7
+						6,
+						8
 					]
 				}
 			],
@@ -260,49 +278,56 @@
 				{
 					"directoryIndex" : 9,
 					"id" : "exercise00::@27deb5cbf0e88ef12d62",
-					"jsonFile" : "target-exercise00-Debug-9a2b59a3e7cdab075bbd.json",
+					"jsonFile" : "target-exercise00-Debug-2b62be83cc728a1f9064.json",
 					"name" : "exercise00",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 10,
 					"id" : "exercise01::@d0eafce78031fbabb6ed",
-					"jsonFile" : "target-exercise01-Debug-0920af2655a61c31f6ea.json",
+					"jsonFile" : "target-exercise01-Debug-aebb5f2d00fd32122575.json",
 					"name" : "exercise01",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "exercise02::@95d9f264b811cdd50121",
-					"jsonFile" : "target-exercise02-Debug-58f7ddf74f1df9b6d686.json",
+					"jsonFile" : "target-exercise02-Debug-798d11afe33ab4c3bbc4.json",
 					"name" : "exercise02",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 12,
 					"id" : "exercise03::@2fac78b1145a44f8620b",
-					"jsonFile" : "target-exercise03-Debug-b08556c522756261395f.json",
+					"jsonFile" : "target-exercise03-Debug-b1440d648c58f5e6e53c.json",
 					"name" : "exercise03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "exercise04::@d987de8cf16ff1772594",
+					"jsonFile" : "target-exercise04-Debug-c05a2b54851fac19a9cb.json",
+					"name" : "exercise04",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "glad::@3dc4ab03f6fdfa199928",
-					"jsonFile" : "target-glad-Debug-141893d5b0ff162e3be8.json",
+					"jsonFile" : "target-glad-Debug-6a3f52993bfc523d03e5.json",
 					"name" : "glad",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@7d8f67159c48f691a52d",
-					"jsonFile" : "target-glfw-Debug-4148c7830f75e877951b.json",
+					"jsonFile" : "target-glfw-Debug-319f1bea80ba4b583f05.json",
 					"name" : "glfw",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "itugl::@6e4f4d1442f75f8f2949",
-					"jsonFile" : "target-itugl-Debug-5e8354db16f727aad002.json",
+					"jsonFile" : "target-itugl-Debug-b39aba611a95d4caf66f.json",
 					"name" : "itugl",
 					"projectIndex" : 0
 				},

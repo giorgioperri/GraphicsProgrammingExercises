@@ -43,6 +43,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise01/cmake_install.cmake")
   include("/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise02/cmake_install.cmake")
   include("/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise03/cmake_install.cmake")
+  include("/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/cmake-build-debug/exercises/exercise04/cmake_install.cmake")
 
 endif()
 
