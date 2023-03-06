@@ -53,6 +53,10 @@ private:
     // (todo) 04.X: Add additional materials
 
     std::shared_ptr<Texture2DObject> m_defaultTexture;
+    std::shared_ptr<Texture2DObject> m_grassTexture;
+    std::shared_ptr<Texture2DObject> m_dirtTexture;
+    std::shared_ptr<Texture2DObject> m_rockTexture;
+    std::shared_ptr<Texture2DObject> m_snowTexture;
 
     // (todo) 04.X: Add additional textures
 
