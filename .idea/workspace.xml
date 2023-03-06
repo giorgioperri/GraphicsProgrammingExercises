@@ -34,14 +34,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/CMakeFiles/exercise04.dir/TexturedTerrainApplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/CMakeFiles/exercise04.dir/TexturedTerrainApplication.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/CMakeFiles/exercise04.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/CMakeFiles/exercise04.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/exercise04" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/exercises/exercise04/exercise04" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/glad/libglad.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/glad/libglad.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/glfw/src/libglfw3.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/glfw/src/libglfw3.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/libitugl.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libraries/itugl/libitugl.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.h" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/TexturedTerrainApplication.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.frag" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.vert" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/exercise04/shaders/terrain.vert" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,21 +67,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/exercise04/shaders&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/giorgioperri/Desktop/ITU/S2/Graphics Programming/graphics-programming-2023/exercises/exercise04/shaders",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/exercises/exercise04/shaders" />
@@ -93,11 +91,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.exercise04">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="exercise00" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ITU-graphics-programming" TARGET_NAME="exercise00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ITU-graphics-programming" RUN_TARGET_NAME="exercise00">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -177,6 +170,8 @@
       <workItem from="1676992216408" duration="11522000" />
       <workItem from="1677569041105" duration="100000" />
       <workItem from="1677569229916" duration="103000" />
+      <workItem from="1678130081737" duration="25000" />
+      <workItem from="1678130113650" duration="2641000" />
     </task>
     <servers />
   </component>
