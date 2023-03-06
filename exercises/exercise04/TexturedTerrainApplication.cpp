@@ -77,6 +77,10 @@ void TexturedTerrainApplication::Render()
     // Water patches
     // (todo) 04.5: Add water planes
 
+    DrawObject(m_terrainPatch, *m_waterMaterial, glm::translate(glm::vec3(0.0f, -2.0f, 0.0f)) * glm::scale(glm::vec3(10.0f)));
+    DrawObject(m_terrainPatch, *m_waterMaterial, glm::translate(glm::vec3(0.0f, -2.0f, -10.0f)) * glm::scale(glm::vec3(10.0f)));
+    DrawObject(m_terrainPatch, *m_waterMaterial, glm::translate(glm::vec3(-10.0f, -2.0f, 0.0f)) * glm::scale(glm::vec3(10.0f)));
+    DrawObject(m_terrainPatch, *m_waterMaterial, glm::translate(glm::vec3(-10.0f, -2.0f, -10.0f)) * glm::scale(glm::vec3(10.0f)));
 }
 
 void TexturedTerrainApplication::InitializeTextures()
@@ -87,6 +91,7 @@ void TexturedTerrainApplication::InitializeTextures()
     m_dirtTexture = LoadTexture("textures/dirt.png");
     m_rockTexture = LoadTexture("textures/rock.jpg");
     m_snowTexture = LoadTexture("textures/snow.jpg");
+    m_waterTexture = LoadTexture("textures/water.png");
 
     m_heightMap = CreateHeightMap(m_gridX, m_gridY, glm::ivec2(0, 0));
     m_heightMap1 = CreateHeightMap(m_gridX, m_gridY, glm::ivec2(0, -1));
@@ -144,6 +149,18 @@ void TexturedTerrainApplication::InitializeMaterials()
 
     // (todo) 04.5: Add water shader and material here
 
+    // Water shader program
+    Shader waterVS = m_vertexShaderLoader.Load("shaders/water.vert");
+    Shader waterFS = m_fragmentShaderLoader.Load("shaders/water.frag");
+    std::shared_ptr<ShaderProgram> waterShaderProgram = std::make_shared<ShaderProgram>();
+    waterShaderProgram->Build(waterVS, waterFS);
+
+    m_waterMaterial = std::make_shared<Material>(waterShaderProgram);
+    m_waterMaterial->SetUniformValue("Color", glm::vec4(1.0f, 1.0f, 1.0f, 0.5f));
+    m_waterMaterial->SetUniformValue("ColorTexture", m_waterTexture);
+    m_waterMaterial->SetUniformValue("ColorTextureScale", glm::vec2(0.1));
+    m_waterMaterial->SetBlendEquation(Material::BlendEquation::Add);
+    m_waterMaterial->SetBlendParams(Material::BlendParam::SourceAlpha, Material::BlendParam::OneMinusSourceAlpha);
 }
 
 void TexturedTerrainApplication::InitializeMeshes()

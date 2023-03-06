@@ -44,19 +44,19 @@ private:
 
     Mesh m_terrainPatch;
     std::shared_ptr<Material> m_defaultMaterial;
+    std::shared_ptr<Material> m_waterMaterial;
     std::shared_ptr<Material> m_terrainMaterial;
     std::shared_ptr<Material> m_terrainMaterial1;
     std::shared_ptr<Material> m_terrainMaterial2;
     std::shared_ptr<Material> m_terrainMaterial3;
 
 
-    // (todo) 04.X: Add additional materials
-
     std::shared_ptr<Texture2DObject> m_defaultTexture;
     std::shared_ptr<Texture2DObject> m_grassTexture;
     std::shared_ptr<Texture2DObject> m_dirtTexture;
     std::shared_ptr<Texture2DObject> m_rockTexture;
     std::shared_ptr<Texture2DObject> m_snowTexture;
+    std::shared_ptr<Texture2DObject> m_waterTexture;
 
     // (todo) 04.X: Add additional textures
 
